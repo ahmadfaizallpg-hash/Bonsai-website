@@ -135,12 +135,12 @@ body {
     color: white;
     border-radius: 5px;
     text-decoration: none;
+    position: relative;
+    top: -6px;
 }
 
 #login-button:hover {
     background: #1e7e34;
-    position: relative;
-    top: -2px;
 }
 
 .admin-only {
