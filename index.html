@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmadfaizal.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">Allgo<span> Python</span>.</a>
+        <div class="navbar-nav">
+            <a href="#">Home</a>
+            <a href="#about">Tentang</a>
+            <a href="#products">Produk</a>
+            <a href="#contact">Kontak</a>
+        </div>
+        <div class="navbar-extra">
+            <a href="#" id="search-button"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart-button" style="position: relative;">
+                <i data-feather="shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a>
+            <a href="#" id="login-button"></a>
+            <a href="#" id="special-menu"><i data-feather="menu"></i></a>
+        </div>
+        <!-- search start -->
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+        <!-- search end -->
+
+        <!-- soping cart -->
+        <div class="shopping-cart">
+            <ul id="cart-items"></ul>
+
+            <div class="cart-total">
+                <h4>Total: IDR <span id="cart-total">0</span></h4>
+            </div>
+            <button onclick="checkoutWA()" class="checkout-btn">Checkout</button>
+        </div>
+        <!-- soping cart end -->
+    </nav>
+    <!-- nav end -->
+
+    <!-- hero section -->
+    <section class="hero" id="home">
+        <main class="content">
+            <h1 class="animate__animated animate__fadeInLeft">Seni & Jenis Pohon<span> Bonsai</span></h1>
+            <p class="animate__animated animate__fadeInLeft  animate__delay-1s">Ini adalah cara-cara kami dalam merawat
+                pohon bonsai</p>
+            <a href="#about" class="cta">Lihat disini</a>
+        </main>
+    </section>
+    <!-- h end -->
+
+    <!-- about section -->
+    <section id="about" class="about">
+        <h2><span>Tentang Pohon</span> Bonsai</h2>
+
+        <div class="row">
+            <div class="about-img">
+                <img src="arnaud-berthomier-SMbW_DyXGf4-unsplash.jpg" alt="Tentang Kami">
+            </div>
+            <div class="content">
+                <h3>Bonsai sangatlah menarik untuk didalami dan bonsai bisa menjadi pilihan jenis tanaman untuk
+                    mepercantik ruangan.</h3>
+                <p>Bonsai (盆栽) adalah tanaman atau pohon yang dikerdilkan di dalam pot dangkal dengan tujuan membuat
+                    miniatur dari bentuk asli pohon besar yang sudah tua di alam bebas.</p>
+                <p>Penanaman (sai, 栽) dilakukan di pot dangkal yang disebut bon (盆). Istilah bonsai juga dipakai untuk
+                    seni tradisional Jepang dalam pemeliharaan tanaman atau pohon dalam pot dangkal, dan apresiasi
+                    keindahan bentuk dahan, daun, batang, dan akar pohon, serta pot dangkal yang menjadi wadah, atau
+                    keseluruhan bentuk tanaman atau pohon. Bonsai adalah pelafalan bahasa Jepang untuk penzai (盆栽)..</p>
+            </div>
+        </div>
+    </section>
+    <!-- about section end-->
+
+    <!-- menu -->
+    <section id="menu" class="menu">
+        <h2>Jenis Pohon<span> Bonsai</span></h2>
+        <p>Ikuti Setiap Langkah-Langkah Kami Dalam Merawatnya.</p>
+
+        <div class="row">
+            <div class="menu-card">
+                <img src="2.jpg" alt="Bonsai Photos" class="menu-card-img">
+                <h3 class="menu-card-title">
+                    - Adenium</h3>
+                <p class="menu-card-prrice">Pohon adenium mempunyai
+                    Keindahan bunga dan keunikan bonggol menjadi
+                    daya tarik tersendiri bagi tanaman yang satu ini. Terdapat beragam warna bungadenium seperti yang
+                    merah, kuning, pink, atau aneka warna lain.</p>
+            </div>
+            <div class="menu-card">
+                <img src="Bonsai-Anting-Putri.jpg" alt="Bonsai Photos" class="menu-card-img">
+                <h3 class="menu-card-title">
+                    - Anting Putri</h3>
+                <p class="menu-card-prrice">Anting putri merupakan tumbuhan berbunga yang memiliki daun hijau kecil
+                    dengan bunga berwarna putih seperti melati kecil. Tanaman yang satu ini hidup pada di beberapa
+                    habitat asli di kawasan tropis Australia, Asia, dan Afrika.
+                    Keberadaannya yang
+                    cukup langka membuat bonsai tanaman ini memiliki harga jual yang sangat tinggi.</p>
+            </div>
+            <div class="menu-card">
+                <img src="cara-bonsai-beringin-putih.jpg" alt="Bonsai Photos" class="menu-card-img">
+                <h3 class="menu-card-title">
+                    - Beringin</h3>
+                <p class="menu-card-prrice">Bonsai pohon beringin disukai karena selain memiliki badan yang besar,
+                    beringin juga tidak mudah mati, karena memiliki daya tahan dan kemampuan adaptasi terhadap
+                    lingkungan geografis di wilayah Indonesia, sehingga bonsai beringin mampu mencapai umur yang sangat
+                    panjang.</p>
+            </div>
+            <div class="menu-card">
+                <img src="dbacc998cb81f12409ec6c218f0893f9.jpg" alt="Bonsai Photos" class="menu-card-img">
+                <h3 class="menu-card-title">
+                    - Asam jawa</h3>
+                <p class="menu-card-prrice">Pohon asam jawa biasanya dijadikan sebagai salah satu pohon untuk peneduh
+                    karena teksturnya yang rindang. Namun, saat ini banyak orang yang mulai menjadikan asam jawa sebagai
+                    pohon bonsai.</p>
+            </div>
+            <div class="menu-card">
+                <img src="Azalea-Bonsai.png" alt="Bonsai Photos" class="menu-card-img">
+                <h3 class="menu-card-title">
+                    - Azalea</h3>
+                <p class="menu-card-prrice">Pohon Azalea memegang posisi yang sangat istimewa dan berharga di dunia para
+                    pecinta Bonsai. Di antara banyak spesies tanaman menakjubkan lainnya, termasuk bonsai pohon dan
+                    semak, yang dapat dilatih dan dirancang agar terlihat seperti pohon dewasa mini, Azalea menghidupkan
+                    imajinasi dengan penampilan unik mereka.</p>
+            </div>
+            <div class="menu-card">
+                <img src="2011_04_13_Nigra001.jpg" alt="Bonsai Photos" class="menu-card-img">
+                <h3 class="menu-card-title">
+                    - Pinus</h3>
+                <p class="menu-card-prrice">Pinus atau tusam juga termasuk tumbuhan yang dapat dibonsai. Kebanyakan
+                    pohon pinus bersifat berumah satu yang, yaitu dalam satu tumbuhan ada organ jantan dan organ betin
+                    namun keberadaannya terpisah. Di beberapa tempat di Indonesia, pinus biasanya juga dipanggil dengan
+                    sebutan damar bunga.</p>
+            </div>
+        </div>
+    </section>
+    <!-- menu end -->
+
+    <!-- Admin Panel -->
+    <div class="admin-only admin-panel">
+        <h3>Tambah Produk</h3>
+
+        <input type="text" id="nama-produk" placeholder="Nama produk"><br>
+        <input type="number" id="harga-produk" placeholder="Harga"><br>
+        <input type="text" id="gambar-produk" placeholder="URL gambar"><br>
+
+        <button onclick="tambahProduk()">Tambah</button>
+    </div>
+    <!-- product -->
+    <section class="products" id="products">
+        <h2>Produk unggulan kami</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto a id quaerat tempore modi. Ea?</p>
+
+        <div class="row"></div>
+    </section>
+
+
+    <!-- product end -->
+
+
+    <!-- kontak -->
+    <section id="contact" class="contact">
+        <h2>Contact<span> kami</span></h2>
+        <p>Anda bisa menghubungi kami kapan pun.</p>
+
+        <div class="row">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d496.66295759833264!2d105.23279465241986!3d-5.214897771329019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1734773877385!5m2!1sid!2sid"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+            <form action="">
+                <div class="input-group">
+                    <i data-feather="user"></i>
+                    <input type="text" placeholder="nama">
+                </div>
+                <div class="input-group">
+                    <i data-feather="mail"></i>
+                    <input type="text" placeholder="email">
+                </div>
+                <div class="input-group">
+                    <i data-feather="phone"></i>
+                    <input type="text" placeholder="no.hp">
+                </div>
+                <button type="submit" class="btn">kirim pesan</button>
+            </form>
+
+        </div>
+    </section>
+
+
+
+    <!-- kontak end -->
+
+    <!-- footer -->
+
+    <footer>
+        <div class="socials">
+            <a href="https://www.instagram.com/ahmad_faaizal/"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="twitter"></i></a>
+            <a href="#"><i data-feather="message-circle"></i></a>
+        </div>
+
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">Tentang</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Kontak</a>
+        </div>
+
+        <div class="credit">
+            <p>Created by <a href="">Ahmadfaizal</a>. | &copy; 2024.</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- item detail -->
+    <div class="modal" id="item-detail-modal">
+        <div class="modal-container">
+            <a href="#" class="close-icon"><i data-feather="x"></i></a>
+            <div class="modal-content">
+                <img src="85315fb2aeee1e66f1423efe800d92bf.jpg" alt="product 1">
+                <div class="product-content">
+                    <h3>Product 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, porro quae totam veniam
+                        tempora neque! Consectetur dolore numquam dolor exercitationem maxime eius possimus, libero
+                        facere.</p>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star"></i>
+                        <i data-feather="star" class="star"></i>
+                        <i data-feather="star" class="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <div class="product-price">
+                        IDR 30k <span>IDR 50k</span>
+                    </div>
+                    <a href="#" class="add-to-cart" data-name="Product 1" data-price="30000">
+                        <i data-feather="shopping-cart"></i><span>add to cart</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- item  detail end -->
+
+    <!--alert-->
+    <div id="toast"></div>
+
+
+    <!-- feather icon -->
+    <script>
+        feather.replace();
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

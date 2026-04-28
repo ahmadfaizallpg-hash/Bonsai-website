@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<style>
+:root {
+    --primary: #28a745;
+    --bg: #0f172a;
+    --card: #1e293b;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: var(--primary);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #218838;
+}
+
+.role {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.role button {
+    flex: 1;
+    margin: 2px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.role .active {
+    background: var(--primary);
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+    <h2>Login</h2>
+
+    <div class="role">
+        <button id="adminBtn">Admin</button>
+        <button id="userBtn" class="active">User</button>
+    </div>
+
+    <div class="input-group">
+        <input type="text" id="username" placeholder="Username">
+    </div>
+
+    <div class="input-group">
+        <input type="password" id="password" placeholder="Password">
+    </div>
+
+    <button class="btn" onclick="login()">Masuk</button>
+</div>
+
+<script>
+let selectedRole = "user";
+
+// ================= ROLE BUTTON =================
+document.getElementById("adminBtn").onclick = () => {
+    selectedRole = "admin";
+    setActive("adminBtn");
+};
+
+document.getElementById("userBtn").onclick = () => {
+    selectedRole = "user";
+    setActive("userBtn");
+};
+
+function setActive(id) {
+    document.querySelectorAll(".role button").forEach(btn => {
+        btn.classList.remove("active");
+    });
+    document.getElementById(id).classList.add("active");
+}
+
+// ================= LOGIN =================
+function login() {
+    const user = document.getElementById("username").value;
+    const pass = document.getElementById("password").value;
+
+    // 🔐 Validasi admin
+    if (selectedRole === "admin") {
+        if (user === "admin" && pass === "123") {
+            localStorage.setItem("role", "admin");
+            window.location.href = "index.html";
+        } else {
+            alert("Login admin salah!");
+        }
+    }
+
+    // 👤 User bebas login
+    else {
+        if (!user || !pass) {
+            alert("Isi username & password!");
+            return;
+        }
+
+        localStorage.setItem("role", "user");
+        window.location.href = "index.html";
+    }
+}
+</script>
+
+</body>
+</html>
