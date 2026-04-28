@@ -139,6 +139,8 @@ body {
 
 #login-button:hover {
     background: #1e7e34;
+    position: relative;
+    top: -2px;
 }
 
 .admin-only {
